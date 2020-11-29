@@ -1,6 +1,7 @@
 package parimpart;
 
 public class ParImpar implements Runnable {
+    
     private int max;
     private Printer print;
     private boolean isPar; 
@@ -13,6 +14,7 @@ public class ParImpar implements Runnable {
     
     @Override
     public void run() {
+        //Operador ternário
         int number = isPar ? 2 : 1;
         while (number <= max) {
             if (isPar) {
