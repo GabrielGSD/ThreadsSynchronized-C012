@@ -8,7 +8,7 @@ public class PrinterComControle {
     synchronized void printPar(int number) {
         while (!isImpar) {
             try {
-                wait();
+                wait(); //Fica em espera até a outra Thread dar um notify()
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
@@ -21,7 +21,7 @@ public class PrinterComControle {
     synchronized void printImpar(int number) {
         while (isImpar) {
             try {
-                wait();
+                wait(); //Fica em espera até a outra Thread dar um notify()
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
