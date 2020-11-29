@@ -1,6 +1,6 @@
 package parimpart;
 
-public class Printer {
+public class PrinterSemControle {
     
     private volatile boolean isImpar;
 
@@ -13,5 +13,4 @@ public class Printer {
         System.out.println(Thread.currentThread().getName() + ":" + number);
         isImpar = true;
     }
-    
 }

@@ -3,10 +3,10 @@ package parimpart;
 public class ParImpar implements Runnable {
     
     private int max;
-    private Printer print;
+    private PrinterSemControle print;
     private boolean isPar; 
 
-    ParImpar(Printer print, int i, boolean b) {
+    ParImpar(PrinterSemControle print, int i, boolean b) {
         this.max = i;
         this.print = print;
         this.isPar = b;
@@ -25,5 +25,4 @@ public class ParImpar implements Runnable {
             number += 2;
         }
     }
-    
 }
